@@ -52,8 +52,19 @@
   border: none;
   cursor: pointer;
 }
+.formContainer .formWrapper form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8da4f1;
+  font-size: 14px;
+  cursor: pointer;
+}
+.formContainer .formWrapper form label img {
+  width: 32px;
+}
 .formContainer .formWrapper p {
   color: #5d5b8d;
   font-size: 15px;
   margin-top: 10px;
-}/*# sourceMappingURL=register.css.map */
+}/*# sourceMappingURL=login.css.map */
