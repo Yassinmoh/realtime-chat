@@ -1,1 +1,54 @@
-/*# sourceMappingURL=home.css.map */
+.home {
+  height: 100vh;
+  background-color: #a7bcff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .container {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 65%;
+  height: 80%;
+  overflow: hidden;
+}
+.home .container .sidebar {
+  flex: 1;
+  background-color: #3e3c61;
+}
+.home .container .sidebar .navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  background-color: #2f2d52;
+  justify-content: space-between;
+  color: #ddddf7;
+}
+.home .container .sidebar .navbar .logo {
+  font-weight: bold;
+}
+.home .container .sidebar .navbar .user {
+  display: flex;
+  gap: 10px;
+}
+.home .container .sidebar .navbar .user img {
+  background-color: #ddddf7;
+  height: 264px;
+  width: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .container .sidebar .navbar .user button {
+  background-color: #5d5b8d;
+  color: #ddddf7;
+  font-style: 10px;
+  border: none;
+  cursor: pointer;
+}
+.home .container .chat {
+  flex: 2;
+}/*# sourceMappingURL=home.css.map */
