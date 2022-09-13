@@ -13,9 +13,15 @@
   height: 80%;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .home .container {
+    width: 90%;
+  }
+}
 .home .container .sidebar {
   flex: 1;
   background-color: #3e3c61;
+  position: relative;
 }
 .home .container .sidebar .navbar {
   display: flex;
@@ -28,6 +34,11 @@
 }
 .home .container .sidebar .navbar .logo {
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .home .container .sidebar .navbar .logo {
+    display: none;
+  }
 }
 .home .container .sidebar .navbar .user {
   display: flex;
@@ -48,6 +59,12 @@
   font-style: 10px;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .home .container .sidebar .navbar .user button {
+    position: absolute;
+    bottom: 10px;
+  }
 }
 .home .container .sidebar .search {
   border-bottom: 1px solid gray;
