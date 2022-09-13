@@ -1,35 +1,40 @@
-.home{
+.home {
     height: 100vh;
     background-color: #a7bcff;
     display: flex;
     align-items: center;
     justify-content: center;
-    .container{
+
+    .container {
         display: flex;
         border: 1px solid white;
         border-radius: 10px;
         width: 65%;
         height: 80%;
         overflow: hidden;
-        .sidebar{
+
+        .sidebar {
             flex: 1;
             background-color: #3e3c61;
-            .navbar{
+
+            .navbar {
                 display: flex;
                 align-items: center;
                 height: 50px;
-                padding:10px;
+                padding: 10px;
                 background-color: #2f2d52;
                 justify-content: space-between;
                 color: #ddddf7;
 
-                .logo{
+                .logo {
                     font-weight: bold;
                 }
-                .user{
+
+                .user {
                     display: flex;
                     gap: 10px;
-                    img{
+
+                    img {
                         background-color: #ddddf7;
                         height: 26px;
                         width: 26px;
@@ -37,8 +42,9 @@
                         overflow: hidden;
                         object-fit: cover;
                     }
-                    button{
-                        background-color:#5d5b8d;
+
+                    button {
+                        background-color: #5d5b8d;
                         color: #ddddf7;
                         font-style: 10px;
                         border: none;
@@ -47,23 +53,25 @@
                 }
             }
 
-            .search{
+            .search {
                 border-bottom: 1px solid gray;
 
-                .searchForm{
+                .searchForm {
                     padding: 10px;
-                    input{
+
+                    input {
                         background-color: transparent;
                         border: none;
                         outline: none;
                         color: white;
 
-                        &::placeholder{
+                        &::placeholder {
                             color: lightgrey;
                         }
                     }
                 }
-                .userChat{
+
+                .userChat {
                     padding: 10px;
                     display: flex;
                     align-items: center;
@@ -71,27 +79,29 @@
                     color: white;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background-color: #2f2d52;
                     }
-                    img{
+
+                    img {
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
-                    .userChatInfo{
-                        span{
+
+                    .userChatInfo {
+                        span {
                             font-weight: bold;
                         }
-                        p{
 
-                        }
+                        p {}
                     }
                 }
             }
-            .chats{
-                .userChat{
+
+            .chats {
+                .userChat {
                     padding: 10px;
                     display: flex;
                     align-items: center;
@@ -99,21 +109,24 @@
                     color: white;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background-color: #2f2d52;
                     }
-                    img{
+
+                    img {
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
-                    .userChatInfo{
-                        span{
+
+                    .userChatInfo {
+                        span {
                             font-weight: 500;
                             font-size: 18px;
                         }
-                        p{
+
+                        p {
                             font-size: 14px;
                             color: lightgray;
                         }
@@ -121,9 +134,72 @@
                 }
             }
         }
-        .chat{
+
+        .chat {
             flex: 2;
+
+            .chatInfo {
+                height: 50px;
+                background-color: #5d5b8d;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+
+                .chatIcons {
+                    display: flex;
+                    gap: 10px;
+
+                    img {
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .messages {
+                background-color: #ddddf7;
+                padding: 10px;
+                height: calc(100% - 160px);
+            }
+
+            .input {
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: #2f2d52;
+                    font-size: 18px;
+
+                    &::placeholder{
+                        color:  lightgray;
+                    }
+                }
+                .send {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                    button{
+                        border: none;
+                        padding: 10px 15px;
+                        color: white;
+                        background-color: #8da4f1;
+                    }
+                }
+            }
         }
     }
 }
-

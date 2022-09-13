@@ -119,4 +119,65 @@
 }
 .home .container .chat {
   flex: 2;
+}
+.home .container .chat .chatInfo {
+  height: 50px;
+  background-color: #5d5b8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: lightgray;
+}
+.home .container .chat .chatInfo .chatIcons {
+  display: flex;
+  gap: 10px;
+}
+.home .container .chat .chatInfo .chatIcons img {
+  height: 24px;
+  cursor: pointer;
+}
+.home .container .chat .messages {
+  background-color: #ddddf7;
+  padding: 10px;
+  height: calc(100% - 160px);
+}
+.home .container .chat .input {
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .container .chat .input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  font-size: 18px;
+}
+.home .container .chat .input input::-moz-placeholder {
+  color: lightgray;
+}
+.home .container .chat .input input:-ms-input-placeholder {
+  color: lightgray;
+}
+.home .container .chat .input input::placeholder {
+  color: lightgray;
+}
+.home .container .chat .input .send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home .container .chat .input .send img {
+  height: 24px;
+  cursor: pointer;
+}
+.home .container .chat .input .send button {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #8da4f1;
 }/*# sourceMappingURL=home.css.map */
