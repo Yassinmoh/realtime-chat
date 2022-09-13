@@ -14,6 +14,7 @@ function App() {
     if (!currentUser) {
       return <Navigate to="/login" />
     }
+    return children
   }
   return (
     <div className="App">

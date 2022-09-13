@@ -1,29 +1,41 @@
-import React from 'react'
 import '../styles/login.css'
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
 
 
 const Login = () => {
-    const [err, setErr] = useState(false)
-    const navigate=useNavigate()
+    const [err, setErr] = useState(false);
+    const navigate = useNavigate();
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const email = e.target[0].value;
+        const password = e.target[1].value;
 
-
-
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            navigate("/")
+        } catch (err) {
+            setErr(true);
+        }
+    };
     return (
-        <div className='formContainer'>
+        <div className="formContainer">
             <div className="formWrapper">
-                <span className='logo'>yassin chat</span>
-                <span className='title'>Log in</span>
-                <form>
-                    <input type="email" placeholder='Enter Email' />
-                    <input type="password" placeholder='Enter Password' />
-                    <button>Login</button>
+                <span className="logo">Lama Chat</span>
+                <span className="title">Login</span>
+                <form onSubmit={handleSubmit}>
+                    <input type="email" placeholder="email" />
+                    <input type="password" placeholder="password" />
+                    <button>Sign in</button>
+                    {err && <span>Something went wrong</span>}
                 </form>
-                <p>Do you have an account ? Create new account </p>
+                <p>You don't have an account? <Link to="/register">Register</Link></p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;
