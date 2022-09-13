@@ -31,7 +31,7 @@
                     gap: 10px;
                     img{
                         background-color: #ddddf7;
-                        height: 264px;
+                        height: 26px;
                         width: 26px;
                         border-radius: 50%;
                         overflow: hidden;
@@ -43,6 +43,80 @@
                         font-style: 10px;
                         border: none;
                         cursor: pointer;
+                    }
+                }
+            }
+
+            .search{
+                border-bottom: 1px solid gray;
+
+                .searchForm{
+                    padding: 10px;
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        color: white;
+
+                        &::placeholder{
+                            color: lightgrey;
+                        }
+                    }
+                }
+                .userChat{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #2f2d52;
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .userChatInfo{
+                        span{
+                            font-weight: bold;
+                        }
+                        p{
+
+                        }
+                    }
+                }
+            }
+            .chats{
+                .userChat{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #2f2d52;
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .userChatInfo{
+                        span{
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: lightgray;
+                        }
                     }
                 }
             }

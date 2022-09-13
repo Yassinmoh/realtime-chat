@@ -35,7 +35,7 @@
 }
 .home .container .sidebar .navbar .user img {
   background-color: #ddddf7;
-  height: 264px;
+  height: 26px;
   width: 26px;
   border-radius: 50%;
   overflow: hidden;
@@ -48,6 +48,74 @@
   font-style: 10px;
   border: none;
   cursor: pointer;
+}
+.home .container .sidebar .search {
+  border-bottom: 1px solid gray;
+}
+.home .container .sidebar .search .searchForm {
+  padding: 10px;
+}
+.home .container .sidebar .search .searchForm input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.home .container .sidebar .search .searchForm input::-moz-placeholder {
+  color: lightgrey;
+}
+.home .container .sidebar .search .searchForm input:-ms-input-placeholder {
+  color: lightgrey;
+}
+.home .container .sidebar .search .searchForm input::placeholder {
+  color: lightgrey;
+}
+.home .container .sidebar .search .userChat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+.home .container .sidebar .search .userChat:hover {
+  background-color: #2f2d52;
+}
+.home .container .sidebar .search .userChat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .container .sidebar .search .userChat .userChatInfo span {
+  font-weight: bold;
+}
+.home .container .sidebar .chats .userChat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+.home .container .sidebar .chats .userChat:hover {
+  background-color: #2f2d52;
+}
+.home .container .sidebar .chats .userChat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .container .sidebar .chats .userChat .userChatInfo span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.home .container .sidebar .chats .userChat .userChatInfo p {
+  font-size: 14px;
+  color: lightgray;
 }
 .home .container .chat {
   flex: 2;
